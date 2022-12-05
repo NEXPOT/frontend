@@ -13,7 +13,6 @@ jobs:
     - name: Generate Environment Variables File for Production
       run: |
         echo "REACT_APP_KAKAOMAP_API_KEY=${{ secrets.REACT_APP_KAKAOMAP_API_KEY }}">>.env.production
-        echo "REACT_APP_BACKEND_URL=${{ secrets.REACT_APP_BACKEND_URL }}">>.env.production
         cat .env.production
         ls -al
       
