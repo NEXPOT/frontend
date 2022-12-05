@@ -87,12 +87,12 @@ const VideoList = ({ regionName }) => {
     남해: "Namhae",
   };
 
-  // const url = process.env.REACT_APP_BACKEND_URL;
+  const url = process.env.REACT_APP_BACKEND_URL;
 	const endpoint = "/api/youtube";
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get(endpoint, {
+        const res = await axios.get(url + endpoint, {
           params: {
             region2: region[regionName],
           },
