@@ -7,7 +7,7 @@ export default function SearchResult() {
 
   const [video, setVideo] = useState([]);
   const url = process.env.REACT_APP_BACKEND_URL;
-	const endpoint = "/api/youtube/search";
+	const endpoint = "/api/youtube/";
 
   useEffect(() => {
     const getData = async () => {
